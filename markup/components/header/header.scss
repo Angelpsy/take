@@ -1,7 +1,11 @@
 .s-header {
-
+    position: absolute;
+    z-index: 1;
+    top: 56px;
+    left: 0;
+    width: 100%;
 }
 
 .b-header {
-
+    color: #fff;
 }
