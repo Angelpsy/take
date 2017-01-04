@@ -3656,6 +3656,18 @@ p {
   fill: currentColor;
 }
 
+.s-header {
+  position: absolute;
+  z-index: 1;
+  top: 56px;
+  left: 0;
+  width: 100%;
+}
+
+.b-header {
+  color: #fff;
+}
+
 .s-hero {
   background: url("../img/assets/hero/bg-hero.jpg") center center no-repeat;
 }
@@ -3722,18 +3734,6 @@ p {
   line-height: 1;
   position: relative;
   top: 2px;
-}
-
-.s-header {
-  position: absolute;
-  z-index: 1;
-  top: 56px;
-  left: 0;
-  width: 100%;
-}
-
-.b-header {
-  color: #fff;
 }
 
 .s-start {
