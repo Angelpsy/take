@@ -10,6 +10,10 @@ body {
     line-height: 1.714;
 }
 
+.clearfix {
+    @include cf;
+}
+
 .s-title {
     font-size: 35px;
     color: #222626;

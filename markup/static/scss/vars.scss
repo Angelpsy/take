@@ -1,6 +1,10 @@
 // File for scss-vars.
 // For example: main colors, paddings and so on.
 
-$brand-primary: #82ca9c;
+$brand-success: #82ca9c;
 
 $font-family-sans-serif: "Open Sans", sans-serif;
+
+$grid-gutter-width: 30px;
+$container-large-desktop: (1170px + $grid-gutter-width);
+

@@ -1,13 +1,20 @@
 .s-hero {
     background: url("%=static=%assets/hero/bg-hero.jpg") center center no-repeat;
+    @media (min-width: $screen-sm-min) {
+        background-attachment: fixed;
+    }
 }
 
 .b-hero {
-    height: 951px;
-    min-height: 100vh;
     color: #fff;
     position: relative;
-    padding-top: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (min-width: $screen-sm-min) {
+        height: 951px;
+        min-height: 100vh;
+        padding-top: 200px;
+    }
     @media (min-width: $screen-md-min) {
         padding-top: 418px;
     }
@@ -16,8 +23,8 @@
         @media (min-width: $screen-md-min) {
             content: url("%=static=%assets/hero/iphone.png");
             position: absolute;
-            right: -63px;
-            bottom: -262px;
+            right: -33px;
+            bottom: -264px;
         }
     }
 }
