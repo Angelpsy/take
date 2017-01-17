@@ -1,0 +1,30 @@
+.s-lookdetail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+        padding-top: 75px;
+        padding-bottom: 20px;
+    }
+}
+
+.b-lookdetail {
+    &__list {
+        margin-top: 20px;
+        @media (min-width: $screen-md-min) {
+            margin-top: 58px;
+        }
+    }
+    &__item {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        @media (min-width: $screen-md-min) {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__item-title {
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 17px;
+    }
+}

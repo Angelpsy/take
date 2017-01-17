@@ -1,0 +1,17 @@
+<div class="s-lookdetail">
+    <div class="container">
+        <section class="b-lookdetail">
+
+            <h2 class="s-title">A look at the details</h2>
+
+            <div class="row b-lookdetail__list">
+                {{#each lookdetail.items}}
+                <div class="b-lookdetail__item col-md-3 col-sm-6">
+                    <div class="b-lookdetail__item-title">{{title}}</div>
+                    <div class="b-lookdetail__item-text">{{{text}}}</div>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+    </div>
+</div>
