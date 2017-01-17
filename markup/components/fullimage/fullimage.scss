@@ -1,0 +1,70 @@
+.s-fullimage {
+    background: #133235 url('%=static=%assets/fullimage/bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 440px;
+        padding-bottom: 132px;
+
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    &:before {
+        @media (max-width: $screen-md-min - 1) {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: rgba(0,0,0,0.5);
+        }
+    }
+
+
+}
+
+.b-fullimage {
+    position: relative;
+    color: #fff;
+
+    &__title {
+
+        font-weight: 300;
+        max-width: 550px;
+        line-height: 1.2;
+
+        font-size: 35px;
+        margin-bottom: 24px;
+        @media (min-width: $screen-md-min) {
+            font-size: 60px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: inherit;
+        vertical-align: middle;
+
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+        &:after {
+            content: "\2192";
+            display: inline-block;
+            margin-left: 25px;
+        }
+    }
+}
