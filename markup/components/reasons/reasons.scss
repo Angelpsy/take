@@ -1,0 +1,46 @@
+.s-reasons {
+    background: #82ca9c;
+    color: #fff;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 105px;
+        padding-bottom: 105px;
+
+        min-height: 536px;
+    }
+}
+
+.b-reasons {
+
+    &__list {
+
+        @media (min-width: $screen-md-min) {
+            margin-top: 57px;
+        }
+    }
+
+    &__item {
+        margin-top: 20px;
+        @media (min-width: $screen-md-min) {
+            margin-top: 0;
+        }
+
+    }
+
+        &__item-title {
+            font-weight: bold;
+            font-size: 13px;
+
+            @media (min-width: $screen-md-min) {
+                margin-bottom: 17px;
+            }
+        }
+
+        &__item-text {
+
+        }
+
+}
