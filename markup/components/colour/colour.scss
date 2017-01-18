@@ -8,8 +8,15 @@
 
     .b-colour__list {
         @include nl;
-        display: flex;
-        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        @media (min-width: $screen-sm-min) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     .b-colour__item {
