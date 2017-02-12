@@ -1,0 +1,35 @@
+<div class="b-prices-item {{ this.className }}">
+
+    <div class="b-prices-item__header">
+        <span class="b-prices-item__label">
+            {{item.label}}
+        </span>
+    </div>
+
+    <div class="b-prices-item__title">
+        {{item.title}}
+    </div>
+
+    <div class="b-prices-item__text">
+        {{{item.text}}}
+    </div>
+
+    <div class="b-prices-item__footer">
+
+        <button class="b-prices-item__btn btn btn-success">
+            Buy now ${{item.price}}
+        </button>
+
+        <div class="b-prices-item__icons">
+
+            <span class="b-prices-item__icon">
+                {{Icon iconName='icon-apple' iconWidth='20' iconHeight='25'}}
+            </span>
+            <span class="b-prices-item__icon">
+                {{Icon iconName='icon-windows' iconWidth='24' iconHeight='24'}}
+            </span>
+
+        </div>
+    </div>
+
+</div>

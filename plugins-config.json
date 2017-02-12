@@ -12,7 +12,7 @@
             "baseDir": "./dev"
         },
         "port": 3004,
-        "open": true,
+        "open": false,
         "notify": true,
         // Choose browser to open
         // @type {String|Array}

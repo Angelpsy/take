@@ -1,0 +1,9 @@
+.s-prices {
+    background: #f6f7fa;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+        padding: 100px 0 145px;
+    }
+}

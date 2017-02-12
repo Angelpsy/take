@@ -1,0 +1,13 @@
+<section class="s-prices">
+    <div class="container">
+
+        <div class="b-prices row">
+            {{#each prices.items}}
+
+                {{> prices-item/prices-item item=this className='col-md-6'}}
+
+            {{/each}}
+        </div>
+
+    </div>
+</section>
