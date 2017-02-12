@@ -20,7 +20,13 @@
     }
 
     .b-footer__title {
-        margin-bottom: 18px;
+        margin-bottom: 5px;
+        @media (max-width: $screen-sm-min - 1) {
+            font-size: 1.2em;
+        }
+        @media (min-width: $screen-sm-min) {
+            margin-bottom: 18px;
+        }
     }
 
 
@@ -30,6 +36,9 @@
 
     .b-footer__menu-list {
         @include nl;
+        @media (max-width: $screen-sm-min - 1) {
+            margin-bottom: 18px;
+        }
     }
 
     .b-footer__menu-item {
