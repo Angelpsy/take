@@ -1,5 +1,53 @@
-<footer class="s-footer b-footer">
-    <div class="l-container">
+<footer class="s-footer">
+    <div class="container">
+
+        <div class="b-footer">
+
+            <div class="b-footer__row-top row">
+
+                <div class="col-md-6">
+
+                    <div class="b-footer__title">
+                        Get in touch
+                    </div>
+
+                    <div class="b-footer__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 col-md-offset-1">
+
+                    {{> form-subscription/form-subscription}}
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                {{#each footer.footerMenus}}
+                <div class="col-md-2 col-sm-4">
+
+                    <div class="b-footer__title">{{this.title}}</div>
+
+                    <ul class="b-footer__menu-list">
+
+                        {{#each this.items}}
+                        <li class="b-footer__menu-item">
+                            <a href="{{this.url}}" class="b-footer__menu-item-link">{{this.title}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+
+                </div>
+                {{/each}}
+
+
+            </div>
+
+        </div>
 
     </div>
 </footer>

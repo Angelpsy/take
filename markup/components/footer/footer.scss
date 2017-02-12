@@ -1,0 +1,49 @@
+.s-footer {
+    background: #192431;
+    color: #f6f7fa;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+        padding-top: 125px;
+        padding-bottom: 130px;
+    }
+}
+
+
+.b-footer {
+    font-size: 13px;
+}
+
+    .b-footer__row-top {
+        margin-bottom: 20px;
+    }
+
+    .b-footer__title {
+        margin-bottom: 18px;
+    }
+
+
+    .b-footer__text {
+        line-height: 1.846;
+    }
+
+    .b-footer__menu-list {
+        @include nl;
+    }
+
+    .b-footer__menu-item {
+        margin-bottom: 2px;
+    }
+
+    .b-footer__menu-item-link {
+        color: inherit;
+
+        transition: 0.085s;
+
+        &:hover {
+            color: inherit;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+    }

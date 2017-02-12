@@ -1,0 +1,56 @@
+.b-form-subscription {
+    max-width: 320px;
+
+    @media (max-width: $screen-md-min - 1) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        max-width: 470px;
+    }
+}
+
+
+    .b-form-subscription__title {
+        margin-bottom: 10px;
+        display: block;
+        @media (min-width: $screen-md-min) {
+            margin-bottom: 23px;
+        }
+    }
+
+    .b-form-subscription__group {
+        @include cf;
+        margin-bottom: 10px;
+        height: 40px;
+
+        @media (min-width: $screen-md-min) {
+            height: 58px;
+        }
+    }
+
+    .b-form-subscription__input {
+        float: left;
+        height: 100%;
+        width: calc(100% - 70px);
+        padding: 0 10px;
+        border: 0;
+        color: #222626;
+        font-size: 16px;
+    }
+
+    .b-form-subscription__btn {
+        float: left;
+        height: 100%;
+        border-radius: 0 1px 1px 0;
+
+        width: 70px;
+    }
+
+    .b-form-subscription__note {
+        max-width: 340px;
+        color: #57697f;
+        font-size: 12px;
+    }
