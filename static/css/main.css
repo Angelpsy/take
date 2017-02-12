@@ -3689,7 +3689,19 @@ body {
 }
 
 .b-footer__title {
-  margin-bottom: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .b-footer__title {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .b-footer__title {
+    margin-bottom: 18px;
+  }
 }
 
 .b-footer__text {
@@ -3702,6 +3714,12 @@ body {
   text-indent: 0;
   list-style: none;
   list-style-position: outside;
+}
+
+@media (max-width: 767px) {
+  .b-footer__menu-list {
+    margin-bottom: 18px;
+  }
 }
 
 .b-footer__menu-item {
@@ -3878,56 +3896,6 @@ body {
   color: #fff;
 }
 
-.s-hero {
-  background: url("../img/assets/hero/bg-hero.jpg") center center no-repeat;
-}
-
-@media (min-width: 768px) {
-  .s-hero {
-    background-attachment: fixed;
-  }
-}
-
-.b-hero {
-  color: #fff;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-@media (min-width: 768px) {
-  .b-hero {
-    height: 951px;
-    min-height: 100vh;
-    padding-top: 200px;
-  }
-}
-
-@media (min-width: 992px) {
-  .b-hero {
-    padding-top: 418px;
-  }
-}
-
-@media (min-width: 992px) {
-  .b-hero:after {
-    content: url("../img/assets/hero/iphone.png");
-    position: absolute;
-    right: -33px;
-    bottom: -264px;
-  }
-}
-
-.b-hero__title {
-  font-size: 60px;
-  font-weight: 100;
-  margin-bottom: 20px;
-}
-
-.b-hero__text {
-  max-width: 550px;
-}
-
 .b-logo__link:hover {
   text-decoration: none;
 }
@@ -3984,6 +3952,56 @@ body {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 17px;
+}
+
+.s-hero {
+  background: url("../img/assets/hero/bg-hero.jpg") center center no-repeat;
+}
+
+@media (min-width: 768px) {
+  .s-hero {
+    background-attachment: fixed;
+  }
+}
+
+.b-hero {
+  color: #fff;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .b-hero {
+    height: 951px;
+    min-height: 100vh;
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .b-hero {
+    padding-top: 418px;
+  }
+}
+
+@media (min-width: 992px) {
+  .b-hero:after {
+    content: url("../img/assets/hero/iphone.png");
+    position: absolute;
+    right: -33px;
+    bottom: -264px;
+  }
+}
+
+.b-hero__title {
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.b-hero__text {
+  max-width: 550px;
 }
 
 .s-prices {
